@@ -1,0 +1,24 @@
+db.Aluno.insert([
+  {"nome": "jose",
+   "data_nascimento": ISODate("1991-12-09T00:00:00.000Z"),
+   "disciplinas_cursadas": ["big data nos negocios", "introducao as linguagens estatisticas"],
+   "disciplinas_em_curso": ["arquitetura e qualidade de dados", "bancos de dados NoSQL"]},
+  {"nome": "jucelio",
+   "data_nascimento": ISODate("1986-04-26T00:00:00.000Z"),
+   "disciplinas_cursadas": ["big data nos negocios", "introducao as linguagens estatisticas"],
+   "disciplinas_em_curso": ["arquitetura e qualidade de dados", "bancos de dados NoSQL"]}
+  {"nome": "viviane",
+   "data_nascimento": ISODate("1988-11-14T00:00:00.000Z"),
+   "disciplinas_cursadas": ["big data nos negocios", "introducao as linguagens estatisticas"],
+   "disciplinas_em_curso": ["arquitetura e qualidade de dados", "bancos de dados NoSQL"]},
+  {"nome": "francis",
+   "data_nascimento": ISODate("1984-10-21T00:00:00.000Z"),
+   "disciplinas_cursadas": ["big data nos negocios", "introducao as linguagens estatisticas"],
+   "disciplinas_em_curso": ["arquitetura e qualidade de dados", "bancos de dados NoSQL"]}
+}])
+
+db.Aluno.find({}).sort({"data_nascimento": 1}).limit(1)
+
+db.Aluno.update({"nome": "jose"}, {"$set": {"nota": 5}})
+
+db.Aluno.delete({"nome": "francis"})
