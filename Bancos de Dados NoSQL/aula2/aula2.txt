@@ -21,4 +21,4 @@ db.Aluno.find({}).sort({"data_nascimento": 1}).limit(1)
 
 db.Aluno.update({"nome": "jose"}, {"$set": {"nota": 5}})
 
-db.Aluno.delete({"nome": "francis"})
+db.Aluno.remove({"nome": "francis"})
