@@ -1,0 +1,3 @@
+[submodule "Bancos de Dados NoSQL/nosql-class"]
+	path = Bancos de Dados NoSQL/nosql-class
+	url = https://github.com/gcouti/nosql-class.git

@@ -1,6 +1,6 @@
-# Especializacao_Ciencia_de_Dados-BigData
+Especializacao em Ciência de Dados e BigData
+============================================
 
-Atualmente, apenas os exercícios da disciplina Banco de Dados NoSQL
+Especialização cursada por José Fonseca na PUC Minas em 2016-2017.
 
-- aula2
-- aula3
+Este repositório contém notas de aulas, exercícios, trabalhos, anotações, e outros.
